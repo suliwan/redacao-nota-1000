@@ -217,7 +217,9 @@
 
         .hero-mockup {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
             position: relative;
         }
 
@@ -525,6 +527,42 @@
             font-size: 0.9rem;
         }
 
+        /* --- VÍDEO E CARROSSEL --- */
+        .video-section {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            width: 100%;
+        }
+        .video-section video {
+            width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 10px 40px rgba(0,0,0,.4);
+            display: block;
+        }
+        .slider {
+            max-width: 900px;
+            margin: 24px auto 0 auto;
+            overflow: hidden;
+            border-radius: 18px;
+            width: 100%;
+        }
+        .track {
+            display: flex;
+            width: 300%;
+            animation: slide 15s infinite;
+        }
+        .track img {
+            width: 100%;
+            flex: 0 0 100%;
+            display: block;
+        }
+        @keyframes slide {
+            0%, 30%   { transform: translateX(0); }
+            33%, 63%  { transform: translateX(-100%); }
+            66%, 96%  { transform: translateX(-200%); }
+            100%      { transform: translateX(0); }
+        }
+
         /* --- 9. RESPONSIVIDADE (MEDIA QUERIES) --- */
         @media (max-width: 968px) {
             .hero-grid {
@@ -572,13 +610,6 @@
             
             .glass-card { padding: 24px; }
         }
-        
-.video-section {max-width:900px;margin:40px auto}
-.video-section video {width:100%;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
-.slider{max-width:900px;margin:40px auto;overflow:hidden;border-radius:18px}
-.track{display:flex;width:300%;animation:slide 15s infinite}
-.track img{width:100%;flex:0 0 100%}
-@keyframes slide{0%,30%{transform:translateX(0)}33%,63%{transform:translateX(-100%)}66%,96%{transform:translateX(-200%)}100%{transform:translateX(0)}}
 </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -628,15 +659,16 @@ src="https://www.facebook.com/tr?id=4593220947575816&ev=PageView
 </div>
 
 <div class="video-section">
-<video controls poster="poster.jpg">
-<source src="ffmpeg -i "WhatsApp Video 2026-08-06 at 09.53.28.mp4" -vcodec libx264 -crf 28 video-hero.mp4" type="video/mp4">
+<video controls preload="metadata" poster="assets/poster.jpg">
+<source src="assets/video-apresentacao.mp4" type="video/mp4">
+Seu navegador não suporta vídeo HTML5.
 </video>
 </div>
 <div class="slider">
 <div class="track">
-<img src="Captura de tela 2026-07-28 133253.png">
-<img src="Captura de tela 2026-07-28 135353.png">
-<img src="Captura de tela 2026-07-28 135515.png">
+<img alt="Print do material 1" src="Captura de tela 2026-07-28 133253.png"/>
+<img alt="Print do material 2" src="Captura de tela 2026-07-28 135353.png"/>
+<img alt="Print do material 3" src="Captura de tela 2026-07-28 135515.png"/>
 </div>
 </div>
 </div>
