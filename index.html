@@ -572,7 +572,14 @@
             
             .glass-card { padding: 24px; }
         }
-    </style>
+        
+.video-section{max-width:900px;margin:40px auto}
+.video-section video{width:100%;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.slider{max-width:900px;margin:40px auto;overflow:hidden;border-radius:18px}
+.track{display:flex;width:300%;animation:slide 15s infinite}
+.track img{width:100%;flex:0 0 100%}
+@keyframes slide{0%,30%{transform:translateX(0)}33%,63%{transform:translateX(-100%)}66%,96%{transform:translateX(-200%)}100%{transform:translateX(0)}}
+</style>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -617,6 +624,19 @@ src="https://www.facebook.com/tr?id=4593220947575816&ev=PageView
 <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center;">
 <span>Guia Completo</span>
 <i class="fa-solid fa-graduation-cap" style="font-size: 1.2rem; color: #fff;"></i>
+</div>
+</div>
+
+<div class="video-section">
+<video controls poster="poster.jpg">
+<source src="WhatsApp Video 2026-08-06 at 09.53.28.mp4" type="video/mp4">
+</video>
+</div>
+<div class="slider">
+<div class="track">
+<img src="Captura de tela 2026-07-28 133253.png">
+<img src="Captura de tela 2026-07-28 135353.png">
+<img src="Captura de tela 2026-07-28 135515.png">
 </div>
 </div>
 </div>
