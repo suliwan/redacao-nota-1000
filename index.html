@@ -48,12 +48,6 @@
             100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
         }
 
-        @keyframes float {
-            0% { transform: translateY(0px) rotate(2deg); }
-            50% { transform: translateY(-15px) rotate(-1deg); }
-            100% { transform: translateY(0px) rotate(2deg); }
-        }
-
         .scroll-reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -219,36 +213,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 32px;
+            gap: 24px;
             position: relative;
-        }
-
-        /* Mockup 3D Estilizado por CSS simulando o produto */
-        .ebook-3d {
-            width: 280px;
-            height: 380px;
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-            border-radius: 8px 16px 16px 8px;
-            box-shadow: -20px 20px 50px rgba(0,0,0,0.7), 0 0 40px rgba(37, 99, 235, 0.2);
-            position: relative;
-            transform: perspective(1000px) rotateY(-20deg) rotateX(10deg);
-            animation: float 6s ease-in-out infinite;
-            border: 2px solid var(--border-glass);
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .ebook-3d::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 12px;
-            height: 100%;
-            background: rgba(255,255,255,0.05);
-            border-right: 1px solid rgba(255,255,255,0.1);
+            width: 100%;
         }
 
         /* --- 2. SEÇÃO DE DOR --- */
@@ -647,17 +614,6 @@ src="https://www.facebook.com/tr?id=4593220947575816&ev=PageView
 <a class="btn-cta" href="https://pay.kiwify.com.br/Kg36RfG" onclick="fbq('track','InitiateCheckout');">QUERO GARANTIR MEU ACESSO</a>
 </div>
 <div class="hero-mockup">
-<div class="ebook-3d">
-<div>
-<span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-light); letter-spacing: 2px;">MÉTODO EXCLUSIVO</span>
-<h2 style="font-size: 1.6rem; font-weight: 800; margin-top: 10px; line-height: 1.2;">REDAÇÃO<br/><span style="color:var(--primary-light)">NOTA 1000</span><br/>ENEM</h2>
-</div>
-<div style="font-size: 0.8rem; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center;">
-<span>Guia Completo</span>
-<i class="fa-solid fa-graduation-cap" style="font-size: 1.2rem; color: #fff;"></i>
-</div>
-</div>
-
 <div class="video-section">
 <video controls preload="metadata" poster="assets/poster.jpg">
 <source src="assets/video-apresentacao.mp4" type="video/mp4">
@@ -666,9 +622,9 @@ Seu navegador não suporta vídeo HTML5.
 </div>
 <div class="slider">
 <div class="track">
-<img alt="Print do material 1" src="Captura de tela 2026-07-28 133253.png"/>
-<img alt="Print do material 2" src="Captura de tela 2026-07-28 135353.png"/>
-<img alt="Print do material 3" src="Captura de tela 2026-07-28 135515.png"/>
+<img alt="Print do material 1" src="assets/screenshot-1.png"/>
+<img alt="Print do material 2" src="assets/screenshot-2.png"/>
+<img alt="Print do material 3" src="assets/screenshot-3.png"/>
 </div>
 </div>
 </div>
